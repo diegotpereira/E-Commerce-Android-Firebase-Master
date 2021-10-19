@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -109,7 +110,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     void carrinho() {
-        
+        Intent intentCarinnho = new Intent(this, CarrinhoActivity.class);
+        startActivity(intentCarinnho);
     }
 
     void switchfragment(Fragment fragment) {
